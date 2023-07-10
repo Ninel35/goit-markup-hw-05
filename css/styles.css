@@ -693,7 +693,7 @@ img {
 .modal-label-user {
   margin-bottom: 8px;
 }
-.modal-form-field {
+.modal-form-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -701,6 +701,13 @@ img {
   display: block;
   margin-bottom: 4px;
   position: relative;
+}
+.modal-form-field {
+  display: block;
+  color: var(--customersBorderColor);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .modal-user-contact {
@@ -733,20 +740,6 @@ img {
 }
 .modal-form-textarea {
   margin-bottom: 16px;
-}
-
-.modal-form-field {
-  display: block;
-  position: relative;
-  margin-bottom: 8px;
-}
-.modal-form-label {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--customersBorderColor);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
 }
 
 .modal-form-input {
@@ -804,12 +797,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--customersBorderColor);
-
-  /* display: flex;
-  align-items: center;
-  gap: 8px;
-   margin-bottom: 24px;*/
-  /*margin-bottom: 8px;*/
 }
 .modal-form-user {
   margin-bottom: 24px;
@@ -829,31 +816,16 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-custom-checkbox:checked + .modal-form-custom-checkbox {
-  /* fill: var(--modalColor);
-
-  border: none;
-  background-color: #404bbf;*/
-}
-
-.modal-form-checkbox:checked + .modal-form-custom-checkbox {
-  fill: var(--modalColor);
-
-  border: none;
-  background-color: #404bbf;
-}
 .modal-form-checkbox:checked
   + .modal-form-custom-checkbox
   > .modal-form-checkbox-icon {
   opacity: 1;
   transform: scale(1);
 }
-
-.modal-form-custom-checkbox:checked
-  + .modal-form-custom-checkbox
-  > .modal-form-checkbox-icon {
-  /* opacity: 1;
-  transform: scale(1);*/
+.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+  fill: var(--modalColor);
+  border: none;
+  background-color: #404bbf;
 }
 
 .modal-form-checkbox-icon {
@@ -866,12 +838,4 @@ img {
   color: var(--logoAndButtonText);
 
   text-decoration: underline;
-}
-.modal-form-agreement-desc {
-  /* user-select: none;
-  color: var(--customersBorderColor);
-
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;*/
 }
