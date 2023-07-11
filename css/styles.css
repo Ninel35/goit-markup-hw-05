@@ -141,7 +141,6 @@ ul {
 .order-button:focus {
   background-color: #404bbf;
   color: var(--fonWebsite);
-  border: 1px solid transparent;
 }
 
 .solutions-section {
@@ -597,6 +596,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .footer-button-icon {
   margin-left: 16px;
 }
@@ -605,7 +605,6 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   background-color: #2e2f4266;
@@ -687,14 +686,6 @@ img {
   color: var(--customersBorderColor);
   display: block;
   margin-bottom: 4px;
-  position: relative;
-}
-.modal-form-field {
-  display: block;
-  color: var(--customersBorderColor);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
 }
 
 .modal-user-contact {
@@ -714,6 +705,7 @@ img {
   position: absolute;
   left: 16px;
   top: 50%;
+  fill: var(--colorNavyBlue);
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -743,6 +735,7 @@ img {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
 }
 
 .modal-form-comment::placeholder {
